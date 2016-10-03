@@ -1,0 +1,28 @@
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+
+/node_modules/
+
+.idea/
+/data/*.sql
+
+/public/assets/
+/public/uploads/
+
+run_script.sh
+*.out
+*.log
+*.env
+*.keep
+*.null
+**/*.DS_Store
+
+/shared/
+
+
