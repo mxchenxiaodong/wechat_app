@@ -34,13 +34,13 @@ gem 'uuidtools'
 gem "mini_magick"
 
 # 微信
-gem 'weixin_authorize'
+# gem 'weixin_authorize'
+gem 'wechat'
 
 # redis
 gem 'redis', '~>3.2'
 gem "redis-namespace"
 gem "redis-rails"
-# gem 'redis-rack-cache'
 
 # 定时处理
 gem 'rufus-scheduler', '~> 3.0.7'
