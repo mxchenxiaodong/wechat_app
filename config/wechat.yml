@@ -1,0 +1,18 @@
+default: &default
+  appid:  <%= ENV['WC_WECHAT_APPID'] %>
+  secret: <%= ENV['WC_WECHAT_APP_SECRET'] %>
+  token:      <%= ENV['WC_WECHAT_TOKEN'] %>
+  access_token: <%= ENV['WC_WECHAT_ACCESS_TOKEN'] %>
+  jsapi_ticket: <%= ENV['WC_WECHAT_JSAPI_TICKET'] %>
+
+production:
+  timeout:    30,
+  skip_verify_ssl: true
+  oauth2_cookie_duration: <%= ENV['WC_WECHAT_OAUTH2_COOKIE_DURATION'] %> # seconds
+
+development:
+  <<: *default
+  trusted_domain_fullname: "http://your_dev.proxy.qqbrowser.cc"
+
+test:
+  <<: *default
